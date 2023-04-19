@@ -6,5 +6,15 @@
 
 
 
+eleListaSpesa= ['pasta','acqua','pane','biscotti','latte'];
 
+
+eleList = document.getElementById('lista');
+let i = 0;
+
+while (i < eleListaSpesa.length) {
+    console.log(eleListaSpesa[i]);
+    document.getElementById ('lista').innerHTML += (`<li class="color">${eleListaSpesa[i]}</li>`);
+    i++;
+}
 
